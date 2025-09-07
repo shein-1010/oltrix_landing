@@ -143,6 +143,9 @@ p, blockquote{ color: var(--muted); }
   .card{ grid-column: span 12 !important; }
 }
 
+
+
+
 /* Tilt hover (subtle 3D) */
 .tilt{ transform-style: preserve-3d; }
 .tilt:hover{ transform: perspective(800px) rotateX(1.5deg) rotateY(-1.2deg) translateY(-6px); }
@@ -194,3 +197,31 @@ a:focus-visible, .cta:focus-visible{
   .bento .card:nth-child(6){ grid-column: span 3; }
   .bento .card:nth-child(7){ grid-column: span 3; }
 }
+
+
+/* Responsive map aligned to container */
+.map-wrap{
+  position: relative;
+  width: min(100%, var(--maxw));
+  margin: 0 auto;
+  /* 16:9 by default; tweak via media query below */
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: var(--radius);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+.map-wrap .map{
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: inherit;
+}
+
+/* Slightly taller map on very small screens */
+@media (max-width: 480px){
+  .map-wrap{ aspect-ratio: 4 / 3; }
+}
+
+/* Safety guard if any element tries to bleed horizontally */
+html, body{ overflow-x: hidden; }

@@ -1,3 +1,14 @@
+# 1. Initialize git in your project folder
+git init
+
+# 2. Add all files (index.html, style.css, etc.)
 git add .
-git commit -m "message"
-git push orogin master 
+
+# 3. Commit with a message
+git commit -m "Initial commit - Oltrix website"
+
+# 4. Add your GitHub repo as remote (replace URL with yours)
+git remote add origin https://github.com/YOUR_USERNAME/oltrix-website.git
+
+# 5. Push to GitHub (main branch)
+git push -u origin main

@@ -225,3 +225,60 @@ a:focus-visible, .cta:focus-visible{
 
 /* Safety guard if any element tries to bleed horizontally */
 html, body{ overflow-x: hidden; }
+
+
+/* Contact section spacing */
+.contact{ padding: clamp(32px, 6vw, 64px) 0; }
+
+/* Panel for heading + actions */
+.contact-panel{
+  width: min(100%, var(--maxw));
+  margin: 0 auto clamp(12px, 2vw, 16px);
+  padding: clamp(14px, 2.5vw, 22px);
+  border-radius: var(--radius);
+}
+
+/* Contact actions: robust icon alignment */
+.contact-actions{
+  display: flex;
+  gap: clamp(10px, 2vw, 16px);
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+.contact-actions .cta{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 18px;
+  line-height: 1;          /* prevents emoji clipping */
+  min-height: 40px;        /* room for icons */
+  border-radius: 12px;
+}
+.contact-actions .icon{
+  font-size: 1.1rem;       /* control emoji size */
+  display: inline-block;
+  line-height: 1;
+}
+
+/* Map container (already added previously) */
+.map-wrap{
+  position: relative;
+  width: min(100%, var(--maxw));
+  margin: 0 auto;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: var(--radius);
+}
+.map-wrap .map{
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: inherit;
+}
+
+/* Slightly taller map on small screens */
+@media (max-width: 480px){
+  .map-wrap{ aspect-ratio: 4 / 3; }
+}

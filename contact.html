@@ -1,42 +1,252 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact Us - Oltrix</title>
-  <link rel="stylesheet" href="style.css"/>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — Oltrix Education</title>
+<meta name="description" content="Talk to Oltrix Education about courses, fees and upcoming cohorts. Call or WhatsApp +91 82899 03410, email contact@oltrix.in, or book a free demo in Mangalore.">
+<link rel="canonical" href="https://oltrix.in/contact.html">
+<meta name="theme-color" content="#2563eb">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Contact — Oltrix Education">
+<meta property="og:description" content="Ask about courses, fees and the next cohort. Free demo sessions available.">
+<meta property="og:url" content="https://oltrix.in/contact.html">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
-  <header>
-    <h1><a href="index.html" class="logo-link">Oltrix</a></h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="contact.html">Contact</a>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" data-header>
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Oltrix Education — home">
+      <img class="brand-mark" src="favicon.png" alt="" width="34" height="36">
+      <span class="brand-text">
+        <span class="brand-name">Oltrix</span>
+        <span class="brand-sub">Education</span>
+      </span>
+    </a>
+
+    <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="courses.html">Courses</a>
+      <a class="nav-link" href="about.html">About</a>
+      <a class="nav-link is-active" href="contact.html" aria-current="page">Contact</a>
+      <a class="btn btn-primary nav-cta" href="#enquiry">Book a free demo</a>
     </nav>
-  </header>
 
-  <section class="hero">
-    <h2>Contact Us</h2>
-    <p>Want to enroll or ask something? Fill this out — we’ll hit you up!</p>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-head">
+    <div class="container">
+      <div class="page-head-inner">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+          <span aria-current="page">Contact</span>
+        </nav>
+        <p class="eyebrow">Contact</p>
+        <h1>Tell us what you're aiming for.</h1>
+        <p>One short conversation is usually enough to know which track fits, what it costs, and when the next batch starts. No pressure, no follow-up calls you didn't ask for.</p>
+      </div>
+    </div>
   </section>
 
-  <section class="features">
-    <form action="https://formspree.io/f/xyzjdgql" method="POST" style="max-width: 500px; margin: auto;">
-      <label>Email</label>
-      <input type="email" name="email" required style="width: 100%; padding: 10px; margin-bottom: 10px;"/>
-      
-      <label>Mobile Number</label>
-      <input type="tel" name="mobile" required style="width: 100%; padding: 10px; margin-bottom: 10px;"/>
-      
-      <label>Your Message</label>
-      <textarea name="message" rows="5" required style="width: 100%; padding: 10px; margin-bottom: 20px;"></textarea>
-      
-      <button type="submit" class="cta-button">📨 Send Message</button>
-    </form>
+  <section class="section" id="enquiry">
+    <div class="container">
+      <div class="contact-layout">
+
+        <!-- Form -->
+        <div class="form-card">
+          <h2 style="font-size:1.35rem;margin-bottom:.35rem">Book a free demo</h2>
+          <p class="muted" style="font-size:.9375rem;margin-bottom:1.5rem">Fill this in and we'll get back within one working day.</p>
+
+          <form action="https://formspree.io/f/xyzjdgql" method="POST">
+            <input type="hidden" name="_subject" value="New enquiry from oltrix.in">
+            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+
+            <div class="form-grid">
+              <div class="field">
+                <label for="name">Full name</label>
+                <input class="input" type="text" id="name" name="name" autocomplete="name" placeholder="Your name" required>
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input class="input" type="email" id="email" name="email" autocomplete="email" placeholder="you@example.com" required>
+              </div>
+              <div class="field">
+                <label for="mobile">Mobile number</label>
+                <input class="input" type="tel" id="mobile" name="mobile" autocomplete="tel" inputmode="tel" placeholder="+91" required>
+              </div>
+              <div class="field">
+                <label for="course">Course of interest</label>
+                <select class="select" id="course" name="course" required>
+                  <option value="">Select a track</option>
+                  <option value="data-science">Data Science</option>
+                  <option value="machine-learning">Machine Learning &amp; AI</option>
+                  <option value="power-bi">Power BI</option>
+                  <option value="sql">SQL</option>
+                  <option value="business-analytics">Business Analytics</option>
+                  <option value="digital-marketing">Digital Marketing</option>
+                  <option value="not-sure">Not sure yet — advise me</option>
+                </select>
+              </div>
+              <div class="field field-full">
+                <label for="message">Your message <span class="hint">(optional)</span></label>
+                <textarea class="textarea" id="message" name="message" rows="4" placeholder="Your background, when you'd like to start, or any question you have."></textarea>
+              </div>
+              <div class="field-full">
+                <button class="btn btn-primary btn-block btn-lg" type="submit">
+                  Request a free demo
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+                </button>
+                <p class="form-note">By submitting you agree to be contacted about your enquiry. We don't share your details or add you to a mailing list.</p>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- Side -->
+        <aside class="contact-side" aria-label="Other ways to reach us">
+          <div class="contact-item">
+            <span class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            </span>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:contact@oltrix.in">contact@oltrix.in</a>
+              <small>Replies within one working day</small>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <span class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9.9 9.9 0 0 1-4.1-.9L3 21l2-4.6a8.4 8.4 0 0 1-1-4A8.4 8.4 0 0 1 12.5 3 8.4 8.4 0 0 1 21 11.5Z"/></svg>
+            </span>
+            <div>
+              <h4>WhatsApp</h4>
+              <a href="https://wa.me/918289903410" target="_blank" rel="noopener">+91 82899 03410</a>
+              <small>Fastest for quick questions</small>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <span class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 5.5-8 12-8 12s-8-6.5-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            </span>
+            <div>
+              <h4>Visit</h4>
+              <p>Perambra, Kozhikode</p>
+              <small>Call ahead so a mentor is free</small>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <span class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            </span>
+            <div>
+              <h4>Office hours</h4>
+              <p>Mon–Sat · 10:00–19:00</p>
+              <small>Sunday by appointment</small>
+            </div>
+          </div>
+
+          <a class="btn btn-ghost" href="https://wa.me/918289903410" target="_blank" rel="noopener" style="justify-content:center">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9.9 9.9 0 0 1-4.1-.9L3 21l2-4.6a8.4 8.4 0 0 1-1-4A8.4 8.4 0 0 1 12.5 3 8.4 8.4 0 0 1 21 11.5Z"/></svg>
+            Message us on WhatsApp
+          </a>
+        </aside>
+
+      </div>
+    </div>
   </section>
 
-  <footer>
-    <p>&copy; 2025 Oltrix. All rights reserved.</p>
-  </footer>
+  <section class="section-tight" style="padding-bottom:0">
+    <div class="container">
+      <div class="section-head" style="margin-bottom:1.5rem">
+        <p class="eyebrow">Find us</p>
+        <h2 style="font-size:1.6rem">Oltrix, Mangalore.</h2>
+      </div>
+      <div class="map-wrap">
+        <iframe class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.821904509053!2d75.75390047505356!3d11.564621688636166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x21db4ec8ff836d29%3A0x1b43cf3cd3c80d52!2sOltrix!5e0!3m2!1sen!2sin!4v1757176193315!5m2!1sen!2sin"
+          title="Oltrix location on Google Maps"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html" aria-label="Oltrix Education — home">
+          <img class="brand-mark" src="favicon.png" alt="" width="34" height="36">
+          <span class="brand-text">
+            <span class="brand-name">Oltrix</span>
+            <span class="brand-sub">Education</span>
+          </span>
+        </a>
+        <p>Practical, career-focused training in data, AI and analytics. Built around real projects and working mentors.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Programs</h4>
+        <ul>
+          <li><a href="courses.html#data-science">Data Science</a></li>
+          <li><a href="courses.html#machine-learning">Machine Learning &amp; AI</a></li>
+          <li><a href="courses.html#power-bi">Power BI</a></li>
+          <li><a href="courses.html#sql">SQL</a></li>
+          <li><a href="courses.html#business-analytics">Business Analytics</a></li>
+          <li><a href="courses.html#digital-marketing">Digital Marketing</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:contact@oltrix.in">contact@oltrix.in</a></li>
+          <li><a href="https://wa.me/918289903410" target="_blank" rel="noopener">+91 82899 03410</a></li>
+          <li>Mangalore, Karnataka</li>
+          <li><a href="https://oltrix.in">oltrix.in</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span data-year>2025</span> Oltrix Education. All rights reserved.</p>
+      <div class="footer-legal">
+        <span>Mangalore, Karnataka</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js" defer></script>
 </body>
 </html>

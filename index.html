@@ -1,179 +1,477 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Oltrix — Practical, Career-Focused Training</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="image/png" href="/favicon.png">
-
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Oltrix Education — Data, AI &amp; Analytics training in Mangalore</title>
+<meta name="description" content="Oltrix Education runs small-cohort, project-based training in Data Science, Machine Learning, Power BI, SQL, Business Analytics and Digital Marketing. Mentored by practitioners in Mangalore.">
+<link rel="canonical" href="https://oltrix.in/">
+<meta name="theme-color" content="#2563eb">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Oltrix Education — Practical, career-focused training">
+<meta property="og:description" content="Small cohorts, working mentors and a portfolio of real projects in data, AI and analytics.">
+<meta property="og:url" content="https://oltrix.in/">
+<meta property="og:site_name" content="Oltrix Education">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
-  <!-- Background Layers -->
-  <div class="bg">
-    <div class="mesh"></div>
-    <div class="blob blob-1"></div>
-    <div class="blob blob-2"></div>
-    <div class="blob blob-3"></div>
-    <div class="noise"></div>
-  </div>
+<a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="site-header glass">
-    <h1>Oltrix</h1>
-    <nav class="site-nav">
-      <a href="#programs">Programs</a>
-      <a href="#testimonials">Testimonials</a>
-      <a href="#contact">Contact</a>
+<header class="site-header" data-header>
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Oltrix Education — home">
+      <img class="brand-mark" src="favicon.png" alt="" width="34" height="36">
+      <span class="brand-text">
+        <span class="brand-name">Oltrix</span>
+        <span class="brand-sub">Education</span>
+      </span>
+    </a>
+
+    <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+      <a class="nav-link is-active" href="index.html" aria-current="page">Home</a>
+      <a class="nav-link" href="courses.html">Courses</a>
+      <a class="nav-link" href="about.html">About</a>
+      <a class="nav-link" href="contact.html">Contact</a>
+      <a class="btn btn-primary nav-cta" href="contact.html">Book a free demo</a>
     </nav>
-  </header>
 
-  <main>
-    <section class="hero">
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- Hero ------------------------------------------------------------- -->
+  <section class="hero">
+    <div class="container">
       <div class="hero-inner">
-        <h2>Oltrix offers practical, career-focused training in Data Science, Machine Learning, Power BI, SQL, Business Analytics, and Digital Marketing.</h2>
-        <p>Learn with real projects and expert mentors.</p>
-        <div class="hero-ctas">
-          <a class="cta neon" href="#contact">Book Free Demo</a>
-          <a class="cta outline" href="#contact">Call Now</a>
+        <p class="eyebrow is-plain">Mangalore · Data, AI &amp; Analytics</p>
+        <h1>Learn the skills behind <em>modern data teams.</em></h1>
+        <p class="lead">Oltrix Education is a mentorship-led institute for people who want a career in data — not another playlist of videos. Small cohorts, practising mentors, and real projects you can show in an interview.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary btn-lg" href="contact.html">Book a free demo</a>
+          <a class="btn btn-ghost btn-lg" href="courses.html">Explore courses</a>
+        </div>
+        <div class="hero-note">
+          <span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            Next cohort enrolling
+          </span>
+          <span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            Beginner friendly
+          </span>
+          <span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            Fees on enquiry
+          </span>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="programs" class="features bento">
-        <!-- 1. Data Science -->
-        <article class="card glass tilt">
-            <h3>Data Science</h3>
-            <p>Comprehensive training in Python, SQL, ML, and data visualization.</p>
-            <p>Learn skills that employers actually look for.</p>
-        </article>
-
-  <!-- 2. Machine Learning -->
-        <article class="card glass tilt">
-            <h3>Machine Learning</h3>
-            <p>Predict trends and automate insights with ML models.</p>
-            <p>Learn prompt engineering, AI automation and custom GPTs.</p>
-        </article>
-
-  <!-- 3. Power BI -->
-        <article class="card glass tilt">
-            <h3>Power BI</h3>
-            <p>Visualize your data with powerful and interactive dashboards.</p>
-            <p>Understand patterns, build dashboards, and make data-driven decisions.</p>
-        </article>
-
-  <!-- 4. SQL -->
-        <article class="card glass tilt">
-            <h3>SQL</h3>
-            <p>Comprehensive training in SQL for querying and analysis.</p>
-            <p>Learn skills that employers actually look for.</p>
-        </article>
-
-  <!-- 5. Business Analytics -->
-        <article class="card glass tilt">
-            <h3>Business Analytics</h3>
-            <p>Master analytics tools and techniques to make smarter business decisions.</p>
-            <p>Understand patterns, build dashboards, and make data-driven decisions.</p>
-        </article>
-
-  <!-- 6. Digital Marketing -->
-        <article class="card glass tilt">
-            <h3>Digital Marketing</h3>
-            <p>Learn SEO, social media marketing, ads, and online branding strategies.</p>
-            <p>Learn skills that employers actually look for.</p>
-        </article>
-
-  <!-- 7. Career Support -->
-        <article class="card glass tilt">
-            <h3>Career Support</h3>
-            <p>Mentors with real-world experience in AI and Data Analytics.</p>
-            <p>Resume prep, interview guidance, and project portfolio building.</p>
-        </article>
-    </section>
-
-
-    <section id="testimonials" class="testimonials">
-      <blockquote class="glass">
-        “Oltrix helped me land my first job as a Data Analyst. The projects were practical and the mentorship was great!” – Rahul K.
-      </blockquote>
-      <blockquote class="glass">
-        “From zero coding knowledge to building ML models in 4 months. Highly recommend Oltrix!” – Aisha P.
-      </blockquote>
-    </section>
-
-    <!-- <section id="contact" class="contact">
-      <h3>Have questions or want to join? Contact us today.</h3>
-      <div class="contact-actions">
-        <a class="cta neon" href="mailto:contact@oltrix.in">📧 Email Us</a>
-        <a class="cta outline" href="https://wa.me/+918289903410" target="_blank" rel="noopener">💬 Chat on WhatsApp</a>
-      </div>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.821904509053!2d75.75390047505356!3d11.564621688636166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x21db4ec8ff836d29%3A0x1b43cf3cd3c80d52!2sOltrix!5e0!3m2!1sen!2sin!4v1757176193315!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-    </section> -->
-
-    <!-- <section id="contact" class="contact">
-      <h3>Have questions or want to join? Contact us today.</h3>
-      <div class="contact-actions">
-        <a class="cta neon" href="mailto:contact@oltrix.in">📧 Email Us</a>
-        <a class="cta outline" href="https://wa.me/+918289903410" target="_blank" rel="noopener">💬 Chat on WhatsApp</a>
-      </div> -->
-
-  <!-- Responsive map container -->
-      <!-- <div class="map-wrap glass">
-        <iframe
-          class="map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.821904509053!2d75.75390047505356!3d11.564621688636166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x21db4ec8ff836d29%3A0x1b43cf3cd3c80d52!2sOltrix!5e0!3m2!1sen!2sin!4v1757176193315!5m2!1sen!2sin"
-          title="Oltrix location on Google Maps"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          allowfullscreen>
-        </iframe>
-      </div>
-    </section> -->
-
-    <section id="contact" class="contact">
-      <div class="contact-panel glass">
-        <h3>Have questions or want to join? Contact us today.</h3>
-        <div class="contact-actions">
-          <a class="cta neon" href="mailto:contact@oltrix.in">
-            <span class="icon">📧</span>
-            <span>Email Us</span>
-          </a>
-          <a class="cta outline" href="https://wa.me/+918289903410" target="_blank" rel="noopener">
-            <span class="icon">💬</span>
-            <span>Chat on WhatsApp</span>
-          </a>
+  <!-- Stats ------------------------------------------------------------ -->
+  <section class="stats" aria-label="Oltrix at a glance">
+    <div class="container">
+      <div class="stats-grid reveal">
+        <div class="stat">
+          <span class="stat-value">6</span>
+          <span class="stat-label">Career tracks</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">100%</span>
+          <span class="stat-label">Project-based learning</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">1:1</span>
+          <span class="stat-label">Mentor guidance</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">Live</span>
+          <span class="stat-label">Sessions with recordings</span>
         </div>
       </div>
+    </div>
+  </section>
 
-      <div class="map-wrap glass">
-        <iframe
-          class="map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.821904509053!2d75.75390047505356!3d11.564621688636166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x21db4ec8ff836d29%3A0x1b43cf3cd3c80d52!2sOltrix!5e0!3m2!1sen!2sin!4v1757176193315!5m2!1sen!2sin"
-          title="Oltrix location on Google Maps"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          allowfullscreen>
-        </iframe>
+  <!-- Programs --------------------------------------------------------- -->
+  <section class="section" id="programs">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Programs</p>
+        <h2>Six tracks. One outcome: work you can defend.</h2>
+        <p>Each track is built around a portfolio, not a syllabus checklist. Start where you are — every program opens with the foundations it needs.</p>
       </div>
-    </section>
 
-  </main>
+      <div class="grid grid-3">
+        <a class="card reveal" href="courses.html#data-science">
+          <span class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="M7 15l3.5-4 3 2.5L20 7"/></svg>
+          </span>
+          <h3>Data Science</h3>
+          <p>Python, SQL, statistics and machine learning — from first principles to a deployed capstone.</p>
+          <div class="card-tags">
+            <span class="tag tag-strong">Most enrolled</span>
+            <span class="tag">16 weeks</span>
+            <span class="tag">Beginner</span>
+          </div>
+        </a>
 
-  <footer class="site-footer glass">
-    <p>2025 Oltrix. All rights reserved</p>
-  </footer>
+        <a class="card reveal reveal-delay-1" href="courses.html#machine-learning">
+          <span class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="7" width="10" height="10" rx="2"/><path d="M10 3v3M14 3v3M10 18v3M14 18v3M3 10h3M3 14h3M18 10h3M18 14h3"/></svg>
+          </span>
+          <h3>Machine Learning &amp; AI</h3>
+          <p>Model building, evaluation and LLM application — the parts that survive contact with real data.</p>
+          <div class="card-tags">
+            <span class="tag">14 weeks</span>
+            <span class="tag">Intermediate</span>
+          </div>
+        </a>
 
-  <script>
-    // Subtle parallax for blobs
-    document.addEventListener('mousemove', (e) => {
-      const { innerWidth:w, innerHeight:h } = window;
-      const x = (e.clientX / w - 0.5) * 2;
-      const y = (e.clientY / h - 0.5) * 2;
-      document.querySelectorAll('.blob').forEach((b, i) => {
-        const depth = (i+1) * 10;
-        b.style.transform = `translate3d(${x * depth}px, ${y * depth}px, 0) scale(1)`;
-      });
-    });
-  </script>
+        <a class="card reveal reveal-delay-2" href="courses.html#power-bi">
+          <span class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3v9h9"/></svg>
+          </span>
+          <h3>Power BI</h3>
+          <p>Data modelling, DAX and dashboards that a business can actually read and act on.</p>
+          <div class="card-tags">
+            <span class="tag">8 weeks</span>
+            <span class="tag">Beginner</span>
+          </div>
+        </a>
+
+        <a class="card reveal" href="courses.html#sql">
+          <span class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v7c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 12v7c0 1.7 3.6 3 8 3s8-1.3 8-3v-7"/></svg>
+          </span>
+          <h3>SQL</h3>
+          <p>Joins, windows, CTEs and query tuning — the skill every analytics interview tests first.</p>
+          <div class="card-tags">
+            <span class="tag">6 weeks</span>
+            <span class="tag">Beginner</span>
+          </div>
+        </a>
+
+        <a class="card reveal reveal-delay-1" href="courses.html#business-analytics">
+          <span class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M3 13h18"/></svg>
+          </span>
+          <h3>Business Analytics</h3>
+          <p>KPI design, Excel modelling and dashboard storytelling for people who decide, not just query.</p>
+          <div class="card-tags">
+            <span class="tag">12 weeks</span>
+            <span class="tag">Beginner</span>
+          </div>
+        </a>
+
+        <a class="card reveal reveal-delay-2" href="courses.html#digital-marketing">
+          <span class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11v2a1 1 0 0 0 1 1h2l4 3V7L6 10H4a1 1 0 0 0-1 1Z"/><path d="M14 8.5a4 4 0 0 1 0 7"/><path d="M17 5.5a8 8 0 0 1 0 13"/></svg>
+          </span>
+          <h3>Digital Marketing</h3>
+          <p>SEO, paid ads, content and analytics — measured against leads, not impressions.</p>
+          <div class="card-tags">
+            <span class="tag">10 weeks</span>
+            <span class="tag">Beginner</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Oltrix -------------------------------------------------------- -->
+  <section class="section section-soft" id="why">
+    <div class="container">
+      <div class="split">
+        <div class="split-head">
+          <div class="section-head">
+            <p class="eyebrow">Why Oltrix</p>
+            <h2>Teaching built for the job, not the certificate.</h2>
+            <p>Most courses stop at "completed". We stop at "can you explain this in an interview?"</p>
+          </div>
+          <a class="link-arrow" href="about.html">
+            More about Oltrix
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+          </a>
+        </div>
+
+        <div class="feature-list">
+          <div class="feature">
+            <span class="feature-num" aria-hidden="true">01</span>
+            <div>
+              <h3>You build from week one</h3>
+              <p>Every module ends with a deliverable — a cleaned dataset, a dashboard, a model with a documented decision. Your repo becomes your résumé.</p>
+            </div>
+          </div>
+          <div class="feature">
+            <span class="feature-num" aria-hidden="true">02</span>
+            <div>
+              <h3>Mentors who still do the work</h3>
+              <p>Our mentors work in analytics and AI day to day, so reviews are about trade-offs and messy data — not textbook answers.</p>
+            </div>
+          </div>
+          <div class="feature">
+            <span class="feature-num" aria-hidden="true">03</span>
+            <div>
+              <h3>Cohorts small enough to be seen</h3>
+              <p>When a batch is small, nobody hides at the back. Doubts get cleared in the session they come up in.</p>
+            </div>
+          </div>
+          <div class="feature">
+            <span class="feature-num" aria-hidden="true">04</span>
+            <div>
+              <h3>Honest career support</h3>
+              <p>Résumé and portfolio reviews, mock interviews with feedback, and roles shared with the cohort. We prepare you — we don't promise a job.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Path -------------------------------------------------------------- -->
+  <section class="section" id="path">
+    <div class="container">
+      <div class="section-head is-center">
+        <p class="eyebrow is-plain">How it works</p>
+        <h2>From enquiry to interview in four steps.</h2>
+      </div>
+      <div class="steps">
+        <div class="step reveal">
+          <span class="step-num">1</span>
+          <h3>Talk to a counsellor</h3>
+          <p>A short conversation about your background, timeline and what you want the course to unlock.</p>
+        </div>
+        <div class="step reveal reveal-delay-1">
+          <span class="step-num">2</span>
+          <h3>Pick your track</h3>
+          <p>We recommend the shortest route to your goal — sometimes that means starting with SQL, not Data Science.</p>
+        </div>
+        <div class="step reveal reveal-delay-2">
+          <span class="step-num">3</span>
+          <h3>Build and get reviewed</h3>
+          <p>Weekly projects, code reviews and a capstone that ties the track together.</p>
+        </div>
+        <div class="step reveal reveal-delay-3">
+          <span class="step-num">4</span>
+          <h3>Interview with proof</h3>
+          <p>Portfolio polish, mock interviews and referrals into our hiring network.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Career support ---------------------------------------------------- -->
+  <section class="section section-tight">
+    <div class="container">
+      <div class="support">
+        <div>
+          <p class="eyebrow">Career support</p>
+          <h2>Included in every track.</h2>
+          <p class="lead">Placement help is where training institutes usually get vague. Here is exactly what you get.</p>
+          <div class="btn-row" style="margin-top:1.5rem">
+            <a class="btn btn-navy" href="contact.html">Ask about placements</a>
+          </div>
+        </div>
+        <ul class="checklist">
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            <span><strong>Résumé and LinkedIn rebuild</strong> — written around the projects you actually finished.</span>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            <span><strong>Portfolio review</strong> — a second pair of eyes before you send it anywhere.</span>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            <span><strong>Mock interviews</strong> — SQL, case and project deep-dive rounds with written feedback.</span>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            <span><strong>Roles shared with the cohort</strong> — openings from alumni and partner teams.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials ------------------------------------------------------ -->
+  <section class="section section-soft" id="testimonials">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Students</p>
+        <h2>In their words.</h2>
+      </div>
+      <div class="grid grid-2">
+        <figure class="quote reveal">
+          <svg class="quote-mark" width="30" height="30" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9.5 5C6 6.5 4 9.6 4 13.4V19h6.4v-6.3H7.3c.1-1.7 1-3.1 2.9-4.2L9.5 5Zm10 0C16 6.5 14 9.6 14 13.4V19h6.4v-6.3h-3.1c.1-1.7 1-3.1 2.9-4.2L19.5 5Z"/></svg>
+          <blockquote>“Oltrix helped me land my first job as a Data Analyst. The projects were practical and the mentorship was great!”</blockquote>
+          <figcaption>
+            <span class="avatar" aria-hidden="true">RK</span>
+            <span>
+              <span class="quote-name">Rahul K.</span>
+              <span class="quote-role">Data Analyst</span>
+            </span>
+          </figcaption>
+        </figure>
+        <figure class="quote reveal reveal-delay-1">
+          <svg class="quote-mark" width="30" height="30" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9.5 5C6 6.5 4 9.6 4 13.4V19h6.4v-6.3H7.3c.1-1.7 1-3.1 2.9-4.2L9.5 5Zm10 0C16 6.5 14 9.6 14 13.4V19h6.4v-6.3h-3.1c.1-1.7 1-3.1 2.9-4.2L19.5 5Z"/></svg>
+          <blockquote>“From zero coding knowledge to building ML models in 4 months. Highly recommend Oltrix!”</blockquote>
+          <figcaption>
+            <span class="avatar" aria-hidden="true">AP</span>
+            <span>
+              <span class="quote-name">Aisha P.</span>
+              <span class="quote-role">Machine Learning</span>
+            </span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ --------------------------------------------------------------- -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="split">
+        <div class="split-head">
+          <div class="section-head">
+            <p class="eyebrow">Questions</p>
+            <h2>Before you enrol.</h2>
+            <p>Still unsure? A five-minute call usually settles it.</p>
+            <div class="btn-row" style="margin-top:1.25rem">
+              <a class="btn btn-ghost" href="contact.html">Talk to us</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq">
+          <details open>
+            <summary>Do I need coding experience?</summary>
+            <div class="faq-answer">For Data Science, Power BI, SQL, Business Analytics and Digital Marketing — no. Each opens with the foundations it needs. Machine Learning &amp; AI assumes basic Python, which the Data Science track covers.</div>
+          </details>
+          <details>
+            <summary>Online or classroom?</summary>
+            <div class="faq-answer">Sessions run live, with recordings you can revisit. Students in and around Mangalore can attend in person; everyone else joins online. Tell us your preference when you enquire and we'll confirm the current batch format.</div>
+          </details>
+          <details>
+            <summary>How long does a track take?</summary>
+            <div class="faq-answer">Most tracks run 6–16 weeks depending on the course, with one to two sessions a week plus project work in between. Part-time batches are designed to sit alongside a job or college.</div>
+          </details>
+          <details>
+            <summary>What does it cost?</summary>
+            <div class="faq-answer">Fees differ by track and batch format, so we quote them on enquiry rather than list a number that may be out of date. Ask about instalments when you call.</div>
+          </details>
+          <details>
+            <summary>Do you guarantee a job?</summary>
+            <div class="faq-answer">No — and be careful with anyone who does. We give you the portfolio, interview practice and referrals. The offer depends on your work and the market.</div>
+          </details>
+          <details>
+            <summary>Will I get a certificate?</summary>
+            <div class="faq-answer">Yes, on completing the capstone project for your track. The certificate is the small print; the portfolio is the point.</div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA --------------------------------------------------------------- -->
+  <section class="section section-tight">
+    <div class="container">
+      <div class="cta-band reveal">
+        <div class="cta-band-inner">
+          <div>
+            <h2>Your next cohort starts soon.</h2>
+            <p>Book a free demo session. Sit in on a live class, meet a mentor, and leave knowing whether this is the right track for you — no obligation.</p>
+            <div class="btn-row">
+              <a class="btn btn-light" href="contact.html">Book a free demo</a>
+              <a class="btn btn-outline-light" href="https://wa.me/918289903410" target="_blank" rel="noopener">Chat on WhatsApp</a>
+            </div>
+          </div>
+          <div class="cta-facts">
+            <div class="cta-fact">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+              Free demo, no commitment
+            </div>
+            <div class="cta-fact">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+              Fees quoted on enquiry
+            </div>
+            <div class="cta-fact">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+              Mangalore &amp; online
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html" aria-label="Oltrix Education — home">
+          <img class="brand-mark" src="favicon.png" alt="" width="34" height="36">
+          <span class="brand-text">
+            <span class="brand-name">Oltrix</span>
+            <span class="brand-sub">Education</span>
+          </span>
+        </a>
+        <p>Practical, career-focused training in data, AI and analytics. Built around real projects and working mentors.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Programs</h4>
+        <ul>
+          <li><a href="courses.html#data-science">Data Science</a></li>
+          <li><a href="courses.html#machine-learning">Machine Learning &amp; AI</a></li>
+          <li><a href="courses.html#power-bi">Power BI</a></li>
+          <li><a href="courses.html#sql">SQL</a></li>
+          <li><a href="courses.html#business-analytics">Business Analytics</a></li>
+          <li><a href="courses.html#digital-marketing">Digital Marketing</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:contact@oltrix.in">contact@oltrix.in</a></li>
+          <li><a href="https://wa.me/918289903410" target="_blank" rel="noopener">+91 82899 03410</a></li>
+          <li>Mangalore, Karnataka</li>
+          <li><a href="https://oltrix.in">oltrix.in</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span data-year>2025</span> Oltrix Education. All rights reserved.</p>
+      <div class="footer-legal">
+        <span>Mangalore, Karnataka</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js" defer></script>
 </body>
 </html>

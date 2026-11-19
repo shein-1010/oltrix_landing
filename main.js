@@ -1,4 +1,4 @@
-/* Oltrix Education — site behaviour
+/* Oltrix Education - site behaviour
    Progressive enhancement only: every page is readable without this file. */
 (function () {
   'use strict';

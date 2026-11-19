@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Oltrix Education — design system
+   Oltrix Education - design system
    White + blue, minimal, professional. Single stylesheet for every page.
    1. Tokens          6. Cards & programs
    2. Reset & base    7. Content blocks
@@ -147,6 +147,8 @@ hr{ border:0; border-top:1px solid var(--line); margin:2rem 0; }
 .btn-light:hover{ background:var(--blue-50); border-color:var(--blue-50); }
 .btn-outline-light{ --btn-bg:transparent; --btn-fg:#fff; --btn-bd:rgba(255,255,255,.4); }
 .btn-outline-light:hover{ background:rgba(255,255,255,.1); border-color:rgba(255,255,255,.7); }
+.btn-whatsapp{ --btn-bg:#128c4a; --btn-fg:#fff; --btn-bd:#128c4a; }
+.btn-whatsapp:hover{ background:#0d6e3a; border-color:#0d6e3a; transform:translateY(-1px); box-shadow:0 8px 20px -10px rgba(18,140,74,.7); }
 .btn-lg{ padding:1rem 1.75rem; font-size:1rem; }
 .btn-block{ width:100%; }
 .btn-row{ display:flex; flex-wrap:wrap; gap:.75rem; }
